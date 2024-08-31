@@ -1,0 +1,653 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins';
+}
+
+body {
+	background-color: #272727;
+}
+
+a {
+	font-size: 20px;
+	color: #272727;
+}
+
+a:hover {
+	color: #272727;
+}
+
+h1 {
+	font-weight: 700;
+}
+
+
+h2 {
+	font-size: 150px;
+	font-family: 'times New Roman', serif;
+}
+
+h4 {
+	font-weight: 600;
+}
+
+้h5 {
+	font-weight: 600;
+}
+
+h6 {
+	font-weight: 600;
+	font-weight: 500;
+}
+
+p {
+	font-family: "K2D", sans-serif;
+}
+
+.white {
+	color: #ffffff !important;
+}
+
+.black {
+	color: #000000;
+}
+
+.orange {
+	color: #ffbc2a;
+	font-size: 36px;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	min-height: 50px;
+	line-height: 50px;
+	background: transparent;
+	z-index: 1030;
+}
+
+.navbar .active {
+	color: #272727 !important;
+
+}
+
+.navbar .nav-item {
+	margin: 0 5px;
+	padding: 0;
+}
+
+.navbar .nav-item a {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 13px;
+}
+
+.navbar .nav-item a:hover {
+	color: #00ffff;
+}
+
+.navbar .nav-link {
+	position: relative;
+	padding: 0;
+}
+
+.navbar .navbar-toggler {
+	cursor: pointer;
+}
+
+.navbar .navbar-toggler span {
+	color: #ffffff;
+}
+
+.navbar-style2 .active:after,
+.navbar-style2 .nav-link:after {
+	display: none;
+}
+
+.nav-scroll {
+	background: #ffffff;
+	-webkit-box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.0509803922);
+	box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.0509803922);
+	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
+}
+
+.nav-scroll .navbar-nav>li>a {
+	color: #3b3b3b;
+}
+
+.nav-scroll .navbar-brand img {
+	-webkit-transform: scale(1.03) !important;
+	transform: scale(1.03) !important;
+}
+
+.nav-scroll .navbar-toggler {
+	cursor: pointer;
+}
+
+.nav-scroll .navbar-toggler span {
+	color: #333333;
+}
+
+.nav-scroll .nav-link:hover:after {
+	background-color: #2388ed;
+}
+
+.nav-scroll .active {
+	position: relative;
+}
+
+/*หน้าเริ่มต้น*/
+.banner {
+	width: 100%;
+	height: 100vh;
+	background-image: rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.banner a:hover {
+	text-decoration: none;
+}
+
+.content {
+	text-align: center;
+}
+
+.content h1 {
+	font-size: 95px;
+	color: #f0f0f0;
+	margin-bottom: 50px;
+	align-items: center;
+}
+
+.content a {
+	font-size: 23px;
+	color: #ffffff;
+	text-decoration: none;
+	border: 2px solid #ffffff;
+	padding: 15px 25px;
+	border-radius: 50px;
+	transition: 0.3s;
+}
+
+.content a:hover {
+	background-color: #fafafa;
+	color: #000000;
+}
+
+.backgroud-vedio {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.content h3 {
+	color: #00a2ca;
+	font-size: 100px;
+}
+
+/*สิ้นสุด*/
+/*เริ่มหน้าแนะนำ*/
+
+.advice {
+	width: 100%;
+	height: 100vh;
+	background: #00a2ca;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url(images/พื้นหลังad.png);
+}
+
+.name {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-box {
+	width: 200px;
+	height: 700px;
+	margin: 10px;
+	border-radius: 50px;
+	background: url(images/มัชคุง.png);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	transition: width 0.5s;
+
+}
+
+.img-box:nth-child(2) {
+	background: url(images/ดาบพิฆาตอสูร.png);
+	background-size: cover;
+	background-position: center;
+
+
+}
+
+.img-box:nth-child(3) {
+	background: url(images/frieren.png);
+	background-size: cover;
+	background-position: center;
+
+}
+
+.img-box:nth-child(4) {
+	background: url(images/ริ.png);
+	background-size: cover;
+	background-position: center;
+
+}
+
+.img-box:nth-child(5) {
+	background: url(images/โอเวอร์ลอร์ด.png);
+	background-size: cover;
+	background-position: center;
+
+}
+
+.img-box h3 {
+	background: rgba(255, 255, 255, 0.5);
+	width: auto;
+	border-radius: 15px;
+	padding: 5px;
+	color: #ffffff;
+	position: absolute;
+	bottom: 0;
+	left: 30px;
+	opacity: 0;
+	transition: bottom 0.5s, opacity 0.5s;
+}
+
+.img-box:hover {
+	width: 700px;
+	cursor: pointer;
+
+}
+
+.img-box:hover h3 {
+	opacity: 1;
+	bottom: 25px;
+}
+
+.back {
+	background-color: #000000;
+}
+
+.back a {
+	font-size: 23px;
+	color: #ffffff;
+	text-decoration: none;
+	border: 2px solid #ffffff;
+	padding: 5px 25px;
+	border-radius: 50px;
+	transition: 0.3s;
+}
+
+.back a:hover {
+	background-color: #fafafa;
+	color: #000000;
+}
+
+/*สิ้นสุด*/
+/*เริ่มabout*/
+.about_section {
+	width: 100%;
+	float: left;
+	padding: 150px;
+}
+
+.about_taital_main {
+	width: 100%;
+	float: left;
+	padding: 120px 0px;
+	margin-bottom: -50px;
+	position: absolute;
+}
+
+.about_taital {
+	position: absolute;
+	width: 100%;
+	float: left;
+	font-size: 40px;
+	color: #f76d37;
+	font-weight: bold;
+
+}
+
+.ifram {
+	position: absolute;
+	margin-top: 50px;
+	padding-left: -20px;
+}
+
+.ifram1 {
+	position: absolute;
+	margin-top: 180px;
+	padding-left: -20px;
+}
+
+.about_text {
+	width: 100%;
+	float: left;
+	font-size: 16px;
+	color: #ffffff;
+	margin: 0px;
+	padding-top: 60px;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+}
+
+
+.vedio {
+	padding-top: 50px;
+
+
+}
+
+
+/* === Google Font Import - Poppins === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+}
+
+section {
+	position: relative;
+	height: 450px;
+	width: 1075px;
+	display: flex;
+	align-items: center;
+}
+
+.bg {
+	position: relative;
+	width: 1200px;
+	height: auto;
+	background: rgba(0, 0, 0, 0.8);
+	padding-top: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	border-radius: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.bg1 {
+
+	position: relative;
+	width: 1200px;
+	height: auto;
+	background: rgba(0, 0, 0, 0.8);
+	padding-top: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	border-radius: 30px;
+	margin-top: 100px;
+	margin-bottom: 60px;
+
+}
+
+.swiper {
+	width: 950px;
+}
+
+.card {
+	position: relative;
+	background: rgb(27, 27, 27);
+	border-radius: 30px;
+	height: 300px;
+	margin: 50px 0px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.card::before {
+	content: "";
+	position: absolute;
+	height: 40%;
+	width: 100%;
+	border-radius: 20px 20px 0 0;
+}
+
+.card .card-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px;
+	position: relative;
+	z-index: 100;
+}
+
+section .card .image {
+	height: 140px;
+	width: 140px;
+	border-radius: 20%;
+	padding: 3px;
+	margin-top: 10px;
+}
+
+section .card .image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 20%;
+	border: 3px solid #202020;
+}
+
+
+.card .name-profession {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+	color: rgb(255, 255, 255);
+}
+
+.name-profession .name {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.name-profession .profession {
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.swiper-pagination {
+	position: absolute;
+	top: 450px;
+}
+
+.swiper-pagination-bullet {
+	height: 7px;
+	width: 26px;
+	border-radius: 25px;
+	background: rgb(255, 255, 255);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	opacity: 0.7;
+	color: rgb(255, 255, 255);
+	transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+	opacity: 1;
+	color: rgb(255, 255, 255);
+}
+
+/*end*/
+
+.section-padding {
+	display: flex;
+	flex-direction: column;
+}
+
+@media all and (max-width:991px) {
+	.navbar .navbar-collapse {
+		overflow: auto;
+		background: rgb(51, 51, 51, 0.9);
+		color: #fff !important;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	.nav-scroll .navbar-collapse {
+		background: #fff !important;
+	}
+
+	#contact_form {
+		margin-bottom: 20px;
+	}
+}
+
+@media all and (max-width:768px) {
+
+	.nav-scroll .navbar-brand img,
+	.navbar-brand img {
+		transform: scale(0.75) !important;
+		-webkit-transform: scale(0.75) !important;
+	}
+
+	.banner-text {
+		padding-right: 0px;
+		margin: 10px 0px 0px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	h3 {
+		font-size: 23px;
+	}
+
+	.section-padding {
+		padding: 40px 0px;
+	}
+
+	.banner-text p {
+		margin: 25px 0px;
+	}
+
+	.banner-text ul li a img {
+		width: 140px;
+		border-radius: 7px;
+	}
+
+	.sectioner-header {
+		width: 90%;
+	}
+
+	.sectioner-header p {
+		font-size: 14px;
+	}
+
+	.about-btn {
+		padding: 5px 30px;
+		margin-top: 0px;
+		font-size: 16px;
+	}
+
+	.single-feature {
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+	.team-detail {
+		margin-top: 20px;
+	}
+
+	.team-detail img {
+		width: 50%;
+	}
+
+	.bx-controls {
+		display: none;
+	}
+
+	.bx-wrapper {
+		margin: 0px 20px !important;
+	}
+
+	.slider .test-img img {
+		margin: 0 auto;
+	}
+
+	.test-img {
+		float: none;
+		width: 200px;
+		height: 200px;
+		margin: 0 auto;
+	}
+
+	.test-text {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	.section-content {
+		margin-top: 40px;
+	}
+
+	.faq-content {
+		margin: 10px 0px;
+	}
+
+	.faq-content h4 {
+		font-size: 16px;
+	}
+
+	.faq-content p {
+		font-size: 13px;
+	}
+
+	#contact_form {
+		margin-bottom: 20px;
+	}
+
+	.contact-item {
+		font-size: 12px;
+	}
+
+	.download ul li a img {
+		width: 120px;
+	}
+
+	.footer-copy p {
+		font-size: 10px;
+	}
+}
